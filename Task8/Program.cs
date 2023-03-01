@@ -6,6 +6,10 @@
 Console.Write ("Введите число");
 string answer = Console.ReadLine ();
 int number = Convert.ToInt32 (answer);
+if (number < 0)
+{
+    Console.Write ("Программа предназначена для положительных чисел :)");
+}
 int current = 1;
 while (current <= number)
 if (current % 2 == 0)
